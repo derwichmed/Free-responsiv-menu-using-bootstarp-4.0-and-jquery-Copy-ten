@@ -1,0 +1,184 @@
+body{
+    background-color: #f4f4f4
+}
+header{
+    background-color: white
+}
+.header_nav_one{
+    min-height: 90px;
+    border-bottom: #e4e4e4 2px solid
+}
+.logo{
+    height: 100%
+}
+.navbar-light .navbar-nav .nav-link{
+    color: black;
+    font-weight: bold
+}
+.header_nav_one > div:nth-child(2) ul{
+    padding: 0px;
+    list-style: none;
+}
+.header_nav_one > div:nth-child(2) ul li{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: 0px;
+    padding-top: 5px
+}
+.header_nav_one > div:nth-child(2) ul li:first-child{
+    background-color: #004085;
+}
+.header_nav_one > div:nth-child(2) ul li:nth-child(2){
+    background-color: skyblue;
+}
+.header_nav_one > div:nth-child(2) ul li:nth-child(3){
+    background-color: red;
+}
+.header_nav_one > div:nth-child(2) ul li:nth-child(4){
+    background-color: #d10101;
+}
+.header_nav_one > div:nth-child(2){
+    padding-top: 20px;
+}
+.header_nav_two{
+    min-height: 60px;
+    margin-top: 15px;
+    padding-bottom: 20px
+}
+.header_nav_two > div:first-child button{
+    width: 100%;
+    height: 100%;
+    color: black;
+    font-weight: bold;
+    border: skyblue 2px double;
+    background-color: #eaeaea;
+    cursor: pointer
+}
+.header_nav_two > div:first-child button img{
+    width: 25px;
+    height: 25px;
+}
+.header_nav_two > div:last-child{
+    border: black 2px double
+}
+.menu{
+    position: absolute;
+    top: 135%;
+    width: 816px;
+    padding-top: 20px;
+    border: #909090 1px solid;
+    box-shadow: black 0px 0px 10px 0px;
+}
+.menu .menu_nav ul{
+    padding: 0px;
+    list-style: none
+}
+.menu .menu_nav ul li{
+    min-height: 48px;
+    color: grey;
+    border-bottom: #dcd7d7 1px solid;
+    width: 100%;
+    font-weight: bold;
+    padding-top: 8px;
+    cursor: pointer
+}
+.menu .menu_nav >  ul >  li:hover{
+    padding-bottom: 50px;
+    border-bottom: #004085 2px double
+}
+.menu .menu_nav ul li img{
+    width: 30px;
+    height: 30px;
+    float: left;
+    margin-right: 10px
+}
+.sub_menu{
+    height: 100%;
+    background-color: white;
+    padding: 0px;
+    list-style: none;
+    overflow-y: scroll;
+    display: none
+}
+.sub_menu > p{
+    width: 100%;
+    border-bottom: #909090 1px solid;
+    height: 48px;
+    padding: 10px
+}
+.sub_menu > p > strong{
+    color: #004085
+}
+.sub_menu_item{
+    padding: 0px;
+    list-style: none;
+}
+.sub_menu_item li{
+    min-height: 48px;
+    border-bottom: #dcd7d7 1px solid;
+    width: 50%
+}
+.header_nav_one > div:nth-child(2) ul li img{
+    width: 25px;
+    height: 25px
+}
+.header_nav_two > div:nth-child(3){
+    border: #000 2px solid;
+    padding: 0px;
+}
+.header_nav_two > div:nth-child(3) > img{
+    height: 100%;
+    width: 50px;
+    border-right: #000 2px double;
+    float: left;
+    display: inline-block
+}
+.header_nav_two > div:nth-child(3) select{
+    width: 70%;
+    height: 100%;
+    background-color: white;
+    display: inline-block;
+    border-right: none
+}
+.searche_mobile{
+    display: none;
+    border: none
+}
+@media(min-width: 500px){
+    .sub_menu{
+        position: absolute;
+        left: 100%;
+        top: 0; 
+        min-width: 500px;
+    }
+}
+@media(max-width: 500px){
+    .header_nav_two > div{
+        padding: 0px
+    }
+    .header_nav_two > div:nth-child(2){
+        display: none
+    }
+    .header_nav_two > div:nth-child(3) select{
+        width: 90px
+    }
+    .searche_mobile{
+        display: block
+    }
+    .menu{
+        width: 300px;
+        top: 270%;
+        display: none
+    }
+    .menu .menu_nav ul li{
+        min-height: 48px;
+        color: grey;
+        border-bottom: #dcd7d7 1px solid;
+        width: 100%;
+    }  
+    .sub_menu{
+        width: 100%;
+        border-left: #004085 2px solid
+    }
+}
